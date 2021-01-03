@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Kawal Corona</title>
+ <link rel="stylesheet" type="text/css" href="Chartjs/Chart.min.css">
+ <script type="text/javascript" src="Chartjs/Chart.min.js"> </script>
+</head>
+<body>
+<h2 >KAWAL CORONA</h2> 
+
+<div style="width: 600px;" >
+ <canvas id="myChart"></canvas>
+</div>
+<h4><a href=""></a></h4>
+<script>
+//deklarasi chartjs untuk membuat grafik 2d di id mychart 
+var ctx = document.getElementById('myChart').getContext('2d');
+
+var myChart = new Chart(ctx, {
+ //chart akan ditampilkan sebagai bar chart
+    type: 'bar',
+    data: {
+     //membuat label chart
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+</body>
+</html>
